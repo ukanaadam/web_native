@@ -1,6 +1,6 @@
 <?php
 
-$koneksi = mysqli_connect("localhost","root","","db_spp");
+$koneksi = mysqli_connect("localhost","root","","ukana_native");
 
 // check connection
 if (mysqli_connect_errno()){
