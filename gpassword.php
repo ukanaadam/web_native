@@ -14,9 +14,9 @@ $id= $_SESSION['iduser'];
     <div style="margin-left: auto; margin-right: auto;" class="card-body">
       <form method="post">
 
-        <input  class="form-control" type="password" placeholder="Password Lama" name="lama">
+        <input required="" class="form-control" type="password" placeholder="Password Lama" name="lama">
         <br>
-        <input  class="form-control"  type="password" placeholder="Password Baru" name="baru"> 
+        <input required=""  class="form-control"  type="password" placeholder="Password Baru" name="baru"> 
         <p style="margin-top: 10px">setelah menekan tombol "Simpan", anda akan diminta melakukan Login ulang.</p> 
         <button style="margin-top: 15px" name="simpan" class="btn btn-primary">Simpan</button>
       </form>
