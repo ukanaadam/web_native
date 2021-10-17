@@ -199,15 +199,11 @@ if (!isset($_SESSION['fullname']))
 aria-labelledby="userDropdown">
 <a class="dropdown-item" href="admin.php?halaman=profil">
     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-    Profile
+    Profil
 </a>
-<a class="dropdown-item" href="#">
+<a class="dropdown-item" href="admin.php?halaman=gpassword">
     <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-    Settings
-</a>
-<a class="dropdown-item" href="#">
-    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-    Activity Log
+    Ganti Password
 </a>
 <div class="dropdown-divider"></div>
 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -230,6 +226,10 @@ aria-labelledby="userDropdown">
         if ($_GET['halaman']=='profil') 
         {
             include 'profil.php';
+        }
+        elseif ($_GET['halaman']=='gpassword') 
+        {
+            include "gpassword.php";
         }
 
     }

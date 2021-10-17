@@ -1,29 +1,6 @@
 
 
-<!-- Page Heading -->
-
-
-<!-- Content Row -->
 <div class="row">
-
-  <!-- Earnings (Monthly) Card Example -->
-
-
-  <!-- Earnings (Monthly) Card Example -->
-
-
-  <!-- Earnings (Monthly) Card Example -->
-
-
-  <!-- Pending Requests Card Example -->
-
-</div>
-
-<!-- Content Row -->
-
-<div class="row">
-
-  <!-- Area Chart -->
   <div class="col-xl-12 col-lg-12">
     <div class="card shadow mb-4">
       <!-- Card Header - Dropdown -->
@@ -38,11 +15,6 @@
    </div>
  </div>
 </div>
-
-<!-- Pie Chart -->
-
 </div>
 
-<!-- Content Row -->
-<div class="row"></div>
 

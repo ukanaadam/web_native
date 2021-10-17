@@ -4,7 +4,7 @@
           <div  class="card card-profile shadow">
             <div class="row justify-content-center">
               <div class="col-lg-3 order-lg-2">
-                <div  class="card-profile-image">
+                <div style="margin-top: 40px" class="card-profile-image">
                   <center>
                     
                     <img style="word-wrap: break-word;" height="200" src="img/undraw_profile.svg" class="rounded-circle">
