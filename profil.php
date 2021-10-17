@@ -44,7 +44,7 @@
                   <i class="ni business_briefcase-24 mr-2"></i>Rekayasa Perangkat Lunak
                 </div>
                 <div>
-                  <i class="ni education_hat mr-2"></i>University of Computer Science
+                  <i class="ni education_hat mr-2"></i>SMK NEGERI 1 Kepanjen
                 </div>
                
                 
