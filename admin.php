@@ -65,7 +65,7 @@ if (!isset($_SESSION['fullname']))
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="" data-target="#collapseTwo"
+                    <a class="nav-link collapsed" href="admin.php?halaman=pembayaran" data-toggle="" data-target="#collapseTwo"
                     aria-expanded="true" >
                     <i class="fas fa-fw fa-cog"></i>
                     <span>Pembayaran</span>
@@ -231,6 +231,10 @@ aria-labelledby="userDropdown">
         {
             include "gpassword.php";
         }
+        elseif ($_GET['halaman']=='pembayaran') 
+        {
+            include "pembayaran.php";
+        }
 
     }
     else
@@ -245,13 +249,7 @@ aria-labelledby="userDropdown">
 <!-- End of Main Content -->
 
 <!-- Footer -->
-<footer class="sticky-footer bg-white">
-    <div class="container my-auto">
-        <div class="copyright text-center my-auto">
-            <span>Aplikasi SPP 2021</span>
-        </div>
-    </div>
-</footer>
+
 <!-- End of Footer -->
 
 </div>
