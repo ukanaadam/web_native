@@ -83,8 +83,8 @@ if (!isset($_SESSION['fullname']))
             <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="utilities-color.html">Rekap Pembayaran</a>
-                <a class="collapse-item" href="utilities-border.html">Cetak Tagihan</a>
+                <a class="collapse-item" href="admin.php?halaman=rekap">Rekap Pembayaran</a>
+                <a class="collapse-item" href="admin.php?halaman=cetaktagihan">Cetak Tagihan</a>
             </div>
         </div>
     </li>
@@ -103,15 +103,15 @@ if (!isset($_SESSION['fullname']))
     </a>
     <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-            <a class="collapse-item" href="login.html">Jurusan</a>
-            <a class="collapse-item" href="register.html">Siswa</a>
-            <a class="collapse-item" href="forgot-password.html">Kelas</a>
+            <a class="collapse-item" href="admin.php?halaman=jurusan">Jurusan</a>
+            <a class="collapse-item" href="admin.php?halaman=siswa">Siswa</a>
+            <a class="collapse-item" href="admin.php?halaman=kelas">Kelas</a>
             <div class="collapse-divider"></div>
             <hr>
-            <a class="collapse-item" href="404.html">Jenis Bayar</a>
-            <a class="collapse-item" href="blank.html">User</a>
+            <a class="collapse-item" href="admin.php?halaman=jenis">Jenis Bayar</a>
+            <a class="collapse-item" href="admin.php?halaman=user">User</a>
             <hr>
-            <a class="collapse-item" href="blank.html">Tahun Pelajaran</a>
+            <a class="collapse-item" href="admin.php?halaman=tapel">Tahun Pelajaran</a>
         </div>
     </div>
 </li>
@@ -120,7 +120,7 @@ if (!isset($_SESSION['fullname']))
 
 
     <!-- Nav Item - Tables -->
-    \
+    
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
@@ -220,28 +220,148 @@ aria-labelledby="userDropdown">
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
-    <?php
-    if (isset($_GET['halaman'])) 
-    {
-        if ($_GET['halaman']=='profil') 
-        {
-            include 'profil.php';
-        }
-        elseif ($_GET['halaman']=='gpassword') 
-        {
-            include "gpassword.php";
-        }
-        elseif ($_GET['halaman']=='pembayaran') 
-        {
-            include "pembayaran.php";
-        }
+    
 
-    }
-    else
-    {
-        include 'home.php';
-    }
-    ?>
+
+
+             <?php
+
+
+             if (isset($_GET['halaman'])) 
+             {
+                if ($_GET['halaman']=='pembayaran') 
+                {
+                    include 'pembayaran.php';
+                }
+                elseif ($_GET['halaman']=='cetak') 
+                {
+                    include 'cetak.php';
+                }
+                elseif ($_GET['halaman']=='cetak_bulan') 
+                {
+                    include 'cetak_bulan.php';
+                }
+                elseif ($_GET['halaman']=='rekap') 
+                {
+                    include 'rekap.php';
+                }
+                elseif ($_GET['halaman']=='cetaktagihan') 
+                {
+                    include 'cetaktagihan.php';
+                }
+                elseif ($_GET['halaman']=='jurusan') 
+                {
+                    include 'jurusan.php';
+                }
+                elseif ($_GET['halaman']=='kelas') 
+                {
+                    include 'kelas.php';
+                }
+                elseif ($_GET['halaman']=='edit_jurusan') 
+                {
+                    include 'edit_jurusan.php';
+                }
+                elseif ($_GET['halaman']=='hapus_jurusan') 
+                {
+                   include 'hapus_jurusan.php';
+               }
+               elseif ($_GET['halaman']=='siswa') 
+               {
+                include 'siswa.php';
+            }
+            elseif ($_GET['halaman']=='edit_siswa') 
+            {
+                include 'siswa_edit.php';
+            }
+            elseif ($_GET['halaman']=='siswa_hapus') 
+            {
+                include 'siswa_hapus.php';
+            }
+            elseif ($_GET['halaman']=='tambah_kelas') 
+            {
+                include 'tambah_kelas.php';
+            }
+            elseif ($_GET['halaman']=='hapus_kelas') 
+            {
+                include 'hapus_kelas.php';
+            }
+            elseif ($_GET['halaman']=='jenis') 
+            {
+                include 'jenis.php';
+            }
+            elseif ($_GET['halaman']=='jenis_edit') 
+            {
+                include 'jenis_edit.php';
+            }
+            elseif ($_GET['halaman']=='user') 
+            {
+                include 'user.php';
+            }
+            elseif ($_GET['halaman']=='hapus_jenis') 
+            {
+                include 'hapus_jenis.php';
+            }
+            elseif ($_GET['halaman']=='user') 
+            {
+                include 'user.php';
+            }
+            elseif ($_GET['halaman']=='profil') 
+            {
+                include 'profil.php';
+            }
+            elseif ($_GET['halaman']=='tambah_user') 
+            {
+             include 'tambah_user.php';
+         }
+         elseif ($_GET['halaman']=='edit_user') 
+         {
+             include 'edit_user.php';
+         }
+         elseif ($_GET['halaman']=='hapus_user') 
+         {
+             include 'hapus_user.php';
+         }
+         elseif ($_GET['halaman']=='profil') 
+         {
+             include 'profil.php';
+         }
+         elseif ($_GET['halaman']=='gpassword') 
+         {
+             include 'gpassword.php';
+         }
+         elseif ($_GET['halaman']=='tapel') 
+         {
+           include 'tapel.php';
+       }
+       elseif ($_GET['halaman']=='tapel_tambah') 
+       {
+           include 'tapel_tambah.php';
+       }
+       elseif ($_GET['halaman']=='tapel_edit') 
+       {
+           include 'tapel_edit.php';
+       }
+       elseif ($_GET['halaman']=='tapel_hapus') 
+       {
+           include 'tapel_hapus.php';
+       }
+
+
+
+   }
+   else
+    {?>
+        <div class="jumbotron">
+            <h2 align="center">APLIKASI PEMBAYARAN SPP SMKN 1 KEPANJEN</h2>
+            <p align="center">Jl. Raya Kedungpedaringan Kepanjen</p>
+            <p align="center">Selamat Datang<strong> <?php echo $_SESSION['fullname']; ?></strong></p>
+        </div>
+    <?php }?>
+
+
+    <!-- container -->
+
+
 </div>
 <!-- /.container-fluid -->
 
